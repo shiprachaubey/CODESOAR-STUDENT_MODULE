@@ -1,10 +1,10 @@
-# 🎓 Student Management Module – Backend API
+# Student Management Module – Backend API
 
-This is a RESTful backend service built using **Node.js**, **Express**, **TypeScript**, and **Prisma ORM** with **PostgreSQL**. It allows for managing student records, including creating, reading (with pagination), updating, and soft-deleting student information.
+This is a RESTful backend service built using **Node.js**, **Express**, **TypeScript**, and **Prisma ORM** with **PostgreSQL**. 
 
 ---
 
-## 🚀 Features
+## Features
 
 - Add a new student
 - Get all students (with pagination)
@@ -19,7 +19,7 @@ This is a RESTful backend service built using **Node.js**, **Express**, **TypeSc
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 - Node.js + Express
 - TypeScript
@@ -29,5 +29,5 @@ This is a RESTful backend service built using **Node.js**, **Express**, **TypeSc
 
 ---
 
-## 📂 Folder Structure
+## Folder Structure
 
