@@ -44,7 +44,7 @@ export const getStudentByRegNo = async (regNo: string) => {
     });
   };
   
-  // Soft Delete
+  // s Delete
   export const softDeleteStudent = async (regNo: string) => {
     return prisma.student.update({
       where: { registrationNo: regNo },

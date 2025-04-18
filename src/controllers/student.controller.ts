@@ -8,6 +8,7 @@ import {
 } from '../services/student.service';
 import { createStudentSchema } from '../utils/validators';
 
+//create student 
 export const handleCreateStudent = async (req: Request, res: Response, next: NextFunction) => {
   try {
     const validated = createStudentSchema.parse(req.body);
@@ -18,6 +19,7 @@ export const handleCreateStudent = async (req: Request, res: Response, next: Nex
   }
 };
 
+//get all student
 export const handleGetStudents = async (req: Request, res: Response, next: NextFunction) => {
     try {
       const page = parseInt(req.query.page as string) || 1;
@@ -45,7 +47,7 @@ export const handleGetStudentByRegNo = async (req: Request, res: Response, next:
   }
 };
 
-// ✅ Update Student
+//  Update Student
 export const handleUpdateStudent = async (req: Request, res: Response, next: NextFunction) => {
   try {
     const regNo = req.params.regNo;
@@ -61,7 +63,7 @@ export const handleUpdateStudent = async (req: Request, res: Response, next: Nex
   }
 };
 
-// ✅ Soft Delete
+//  Soft Delete
 export const handleDeleteStudent = async (req: Request, res: Response, next: NextFunction) => {
   try {
     const regNo = req.params.regNo;

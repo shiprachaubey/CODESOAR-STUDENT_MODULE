@@ -6,7 +6,6 @@ export const logger = (req: Request, _res: Response, next: NextFunction) => {
   next();
 };
 
-
  // Handles 404 Not Found routes.
  
 export const notFoundHandler = (_req: Request, res: Response) => {
@@ -15,8 +14,7 @@ export const notFoundHandler = (_req: Request, res: Response) => {
   });
 };
 
-
- // Centralized error handler middleware.
+// Centralized error handler middleware.
  
 export const errorHandler = (
   err: any,
